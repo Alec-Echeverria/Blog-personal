@@ -6,17 +6,25 @@ body{
     padding: 0;
     font-size: 13px;
     font-family: 'Roboto mono',monospace;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 a{
     text-decoration: none;
     display: inline;
     color: black;
 }
+.home-body{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.grid-container{
+    max-width: 980px;
+    margin: auto;
+}
+
 
 header{
     width: 100%;
@@ -123,4 +131,205 @@ nav .profile-link a{
 .home-main-button:hover {
     background-color: #47cfac;
     transform: scale(1.1);
+}
+
+/*---Sección de blogs----*/
+
+.blogs-main{
+    display: grid;
+}
+
+.blogs-news-container{
+    background-color: #E6E9ED;
+    padding: 0 100px 40px;
+}
+
+.blogs-main-news{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.blogs-news-img-container{
+    grid-column: 1;
+}
+
+.blogs-news-img-container img {
+    width: 65%;
+    border-radius: 25px;
+    object-fit: contain;
+}
+
+.blogs-news-info-container {
+    grid-column: 2;
+}
+.blogs-news-info-container p{
+    margin-bottom: 35px;
+}
+
+.blogs-post-container{
+    padding: 0 100px 40px;
+}
+
+.blogs-post-container h3{
+    border-bottom: 2px solid #cdd2da;
+    padding-bottom:20px;
+    text-align: center;
+}
+.blogs-button{
+    border: 2px solid  #47cfac;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.blogs-button:hover{
+    padding: 12px 20px;
+    background-color: #47cfac;
+    font-weight: bolder;
+
+}
+
+.blogs-post-container .post-container{
+    display: inline-block;
+    padding: 10px 10px 20px;
+    max-width: 30%;
+    margin-bottom:20px;
+    /* border: 3px solid  #cdd2da;
+    border-radius: 15px; */
+}
+
+.blogs-post-container .post-container p{
+    margin-bottom:36px ;
+}
+.post-container:hover{
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.171);
+    cursor: pointer;
+}
+
+.blogs-post-container .post-container img{
+    width: 100%;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: #23262c  ;
+    border-top: 35px solid #47cfac;
+}
+footer p{
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+/*---Sección detalle de blogs----*/
+.blogpost-img-container{
+   padding: 0 50px 28px;   
+}
+
+.blogpost-img-container img{  
+    width: 100%;
+    border-radius: 25px;
+    object-fit: contain;   
+}
+
+.blogpost-main-container{
+    padding: 0 50px 40px;
+}
+
+.blogpost-main-container h3{
+    border-bottom:1px solid  #cdd2da ;
+    padding-bottom:20px;
+}
+
+.blogpost-main-container Article h1{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.blogpost-main-container Article p{
+    text-align: justify;
+}
+
+.contact-container{
+   background-color: #d1d1db;
+}
+.contact-main-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.contact-main-container img{
+    width: 80px;
+}
+.contact-main-container a{
+    font-size: 16px;
+    border-bottom: 1px solid black;
+}
+.contact-left{
+    display: grid;
+    grid-template-columns: 100px 208px;
+}
+.contact-left div, .contact-right div{
+    padding-bottom: 0;
+    align-self: flex-end;
+}
+
+.contact-right{
+    display: grid;
+    grid-template-columns: 100px 208px;
+}
+
+/*---Sección Acerca de mí----*/
+.profile-main-container{
+    padding: 40px 40px;
+    background-color:  #cdd2da;
+    margin-bottom: 50px;
+}
+
+.profile-main-container img{
+    width: 320px;
+    margin-right: 30px;
+    border-radius: 8px;
+}
+
+.profile-main-container .profile-container{
+    display: flex;
+    align-items: center;
+}
+
+
+.profile-main-projects h3{
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid  #cdd2da;
+}
+
+.projects-main-container{ 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.project-container{
+    padding: 10px 20px;
+    margin-bottom: 60px;
+}
+.project-container img{
+    width: 100%;
+    border-radius: 16px;
+}
+.project-container h4{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+.project-container p{
+    text-align: justify;
+}
+.project-container:hover{
+    box-shadow: 10px 10px  5px rgba(0, 0, 0, 0.171); 
+    cursor: pointer;
 }
